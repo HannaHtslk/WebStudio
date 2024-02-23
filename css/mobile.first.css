@@ -1,0 +1,116 @@
+.hide {
+    display: none;
+}
+
+/* #region Common Styles */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFF;
+}
+
+:root {
+    --general-text-color: #434455;
+    --subheader-color: #2E2F42;
+    --logo-font: "Raleway", sans-serif;
+    --footer-background: #2E2F42;
+    --footer-text-color: #F4F4FD;
+    --main-page-background: #2E2F42;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-width: 320px;
+    margin: 0 auto; 
+    padding: 0 16px;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 736px; 
+    }
+}
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1128px;
+        padding: 0 15px;
+    }
+}
+
+section {
+    padding: 96px 0;
+}
+@media screen and (min-width: 1158px) {
+    section {
+        padding: 120px 0;
+    }
+}
+
+/* #endregion */
+
+/* #region Header */
+
+
+
+
+
+
+/* #endregion */
+
+/* #region Hero */
+.main-page {
+    padding: 72px 52px;
+    background-color: var(--main-page-background);
+    max-width: 1440px;
+}
+
+
+
+
+
+
+/* #endregion */
+
+
+/* #region Values */
+ .company-values {
+    background-color: #FFFFFF;
+
+ }
+
+/* #endregion */
+
+
