@@ -747,7 +747,7 @@ footer .logo {
     align-items: center;
     gap: 72px;
     margin-top: 72px;
-}
+} 
 .social-media {
     width: 208px;
     height: 80px;
@@ -849,6 +849,25 @@ gap: 16px;
     fill: #FFFFFF;
     margin-left: 16px;
 }
+
+@media screen and (min-width: 768px) {
+.website-footer {
+    padding: 96px 108px;
+}
+.logo-wrapper {
+    text-align: left;
+
+}
+
+.footer-logo {
+    max-width: 264px;
+}
+.social-media {
+    align-items: flex-start;
+}
+}
+
+
 /* #endregion */
 
 
