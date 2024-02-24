@@ -85,7 +85,16 @@ section {
 
 .page-header {
     border-bottom: 1px solid #E7E9FC;
-        box-shadow: 2px 1px rgba(46, 47, 66, 0.08),0px 1px 1px rgba(46, 47, 66, 0.16),0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 2px 1px rgba(46, 47, 66, 0.08),0px 1px 1px rgba(46, 47, 66, 0.16),0px 1px 6px rgba(46, 47, 66, 0.08);
+    background-color: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .burger-menu {
     border: none;
@@ -110,19 +119,6 @@ section {
 }
 
 
-
-.page-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.nav-list {
-    display: none;
-}
-.contact-information {
-    display: none;
-}
-
 .logo {
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -144,6 +140,102 @@ section {
     letter-spacing: 0.54px;
     text-transform: uppercase;
 }
+
+.nav-list {
+    display: none;
+}
+@media screen and (min-width: 768px){
+ .nav-list {
+    display: flex;
+    gap: 40px;
+ }
+ .nav-item {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+ }
+
+.nav-link {
+    display: block;
+    padding: 24px 0;
+    color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+.nav-link:focus {
+    color: #404BBF;
+}
+ .nav-link.current {
+     position: relative;
+     color: #404BBF;
+ }
+ .nav-link.current::after {
+    position: absolute;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #404BBF;
+        content: "";
+        width: 100%;
+        left: 0;
+        bottom: -1px;
+ }
+
+ .page-nav {
+    display: flex;
+        align-items: center;
+        margin-right: auto;
+        gap: 120px;
+ }
+ .page-header .container {
+    display: flex;
+    align-items: center;
+ }
+}
+
+.contact-information {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-item {
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0.48px;
+}
+.contact-link {
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-link:focus {
+    color: #404BBF;
+}
+}
+
+
+@media screen and (min-width: 1158px) {
+.contact-information {
+    flex-direction: row; 
+    gap: 40px;
+}
+.contact-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+}
+
+
+
 
 
 
