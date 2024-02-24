@@ -524,7 +524,7 @@ footer {
     }
 }
 .team-member {
-max-width: 264px;
+min-width: 264px;
 text-align: center;
 background-color: #FFFFFF;
 margin-bottom: 72px;
@@ -722,7 +722,7 @@ gap: 24px;
 
 .footer-text {
     color: var(--footer-text-color);
-    width: 264px;
+    min-width: 264px;
     font-family: var(--main-text-font);
     font-size: 16px;
     font-weight: 400;
