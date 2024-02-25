@@ -883,11 +883,20 @@ gap: 24px;
     }
 
     .website-footer .container {
-        flex-direction: column;
-        gap: 72px;
         align-items: flex-start;
         padding: 0 92px;
     }
 
+}
+
+@media screen and (min-width:1158px) {
+    .website-footer .container {
+        flex-direction: row;
+        padding: 0;
+        gap: 80px;
+    }
+    .footer-top {
+        gap: 120px;
+    }
 }
 /* #endregion */
