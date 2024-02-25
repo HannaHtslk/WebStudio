@@ -858,4 +858,36 @@ gap: 24px;
     fill: #FFFFFF;
     margin-left: 16px;
 }
+
+@media screen and (min-width:768px) {
+    .web {
+        text-align: left;
+    }
+    .footer-text {
+        max-width: 264px;
+    }
+    .social-media {
+        align-items: flex-start;
+    }
+   .subscription {
+        align-items: flex-start;
+    }
+    .footer-form {
+        display: flex;
+        gap: 24px;
+    }
+    .footer-top {
+        display: flex;
+        gap: 24px;
+        align-items: baseline;
+    }
+
+    .website-footer .container {
+        flex-direction: column;
+        gap: 72px;
+        align-items: flex-start;
+        padding: 0 92px;
+    }
+
+}
 /* #endregion */
