@@ -704,6 +704,14 @@ gap: 24px;
 .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
 }
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.portfolio-item:focus .overlay,
+.portfolio-item:hover .overlay {
+    transform: translatey(0);
+}
 }
 
 
@@ -897,6 +905,14 @@ gap: 24px;
     }
     .footer-top {
         gap: 120px;
+    }
+    .subscribe-btn:hover,
+    .subscribe-btn:focus {
+    background-color: #404BBF;
+     }
+    .footer-link:hover,
+    .footer-link:focus {
+        background-color: #31D0AA;
     }
 }
 /* #endregion */
